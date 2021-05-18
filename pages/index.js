@@ -1,10 +1,8 @@
 import React from 'react';
-import BpkText from 'bpk-component-text';
-
 import Header from '../components/Header';
-import Itineraries from '../conponents/Itineraries'
+import Itineraries from '../components/Itineraries'
 
-import STYLES from './App.scss';
+import STYLES from '../styles/App.module.scss';
 
 const getClassName = (className) => STYLES[className] || 'UNKNOWN';
 
@@ -13,8 +11,6 @@ export default function Home() {
     <div className={getClassName('App')}>
     <Header />
     <main className={getClassName('App__main')}>
-      <BpkText tagName="p">Over to you...</BpkText>
-      {/* TODO: Add a component to display results here */}
       <Itineraries/>
     </main>
   </div>
