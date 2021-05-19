@@ -8,6 +8,10 @@ I only added fontawesome for the arrow icon.
 
 To start the application locally in development mode, from the root run:
 ```
+    npm i
+```
+
+```
     npm run dev
 ```
 
