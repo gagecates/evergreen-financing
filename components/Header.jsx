@@ -1,6 +1,5 @@
 import React from 'react';
 
-import logo from '../public/logo.svg';
 import STYLES from '../styles/Header.module.scss';
 
 const getClassName = (className) => STYLES[className] || 'UNKNOWN';
@@ -12,7 +11,7 @@ const Header = () => (
       <img
         className={getClassName('Header__logo-image')}
         alt="Skyscanner"
-        src={logo}
+        src='./logo.svg'
       />
     </a>
   </header>

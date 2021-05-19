@@ -3,5 +3,82 @@
 .App {
   &__main {
     padding: $bpk-spacing-sm;
+    display: flex;
+    justify-content: center;
   }
+}
+
+.it-container{
+  width: 450px;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  @include bpk-box-shadow-sm;
+}
+
+.section-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 33%;
+}
+
+.airline-img{
+  position: relative;
+  bottom: 10px;
+  height: 40%;
+  width: auto;
+  margin: 10px;
+}
+
+.duration-info{
+  position: absolute;
+  right: 25px;
+  text-align: center;
+}
+
+.button{
+  position: absolute;
+  right: 25px;
+  padding: 7px;
+  width: 150px;
+  font-size: 20pt;
+  color: white;
+  background-color: rgb(42, 187, 168);
+  border-radius: 10px;
+  border: none;
+}
+
+.price-container{
+  margin-left: 10px;
+  color: rgb(175, 171, 171);
+}
+
+.price{
+  font-size: 25pt;
+  font-weight: 300;
+  color: black;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
+
+.airport{
+  color: rgb(129, 123, 123);
+  margin-top: 10px;
+}
+
+.stops{
+  color: red;
+  margin-top: 10px;
+}
+
+.direct{
+  color: rgb(42, 187, 168);
+  margin-top: 10px;
+}
+
+.gray{
+  color: #a19c9c;
 }
