@@ -16,9 +16,16 @@
   @include bpk-box-shadow-sm;
 }
 
+.flex-center{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
 .section-container{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 33%;
 }
@@ -26,20 +33,16 @@
 .airline-img{
   position: relative;
   bottom: 10px;
-  height: 40%;
-  width: auto;
+  height: 40px;
+  width: 40px;
   margin: 10px;
 }
 
 .duration-info{
-  position: absolute;
-  right: 25px;
   text-align: center;
 }
 
 .button{
-  position: absolute;
-  right: 25px;
   padding: 7px;
   width: 150px;
   font-size: 20pt;
@@ -47,6 +50,7 @@
   background-color: rgb(42, 187, 168);
   border-radius: 10px;
   border: none;
+  margin-right: 10px;
 }
 
 .price-container{

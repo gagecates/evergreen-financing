@@ -28,19 +28,23 @@ export default function Itinerary(props) {
             {props.legs.map(leg => {
                 return(
                     <div className={getClassName('section-container')}>
-                        <img className={getClassName('airline-img')} src={`https://logos.skyscnr.com/images/airlines/favicon/${leg.airline_id}.png`}/>
-                        <div className={getClassName('mr-10')}>
-                            <div>{getTime(leg.departure_time)}</div>
-                            <div className={getClassName('airport')}>{leg.departure_airport}</div>
+                        <div className={getClassName('flex-center')}>
+                            <img className={getClassName('airline-img')} src={`https://logos.skyscnr.com/images/airlines/favicon/${leg.airline_id}.png`}/>
+                            <div className={getClassName('mr-10')}>
+                                <div>{getTime(leg.departure_time)}</div>
+                                <div className={getClassName('airport')}>{leg.departure_airport}</div>
+                            </div>
+                            <div className={getClassName('mr-10')}><i className="fas fa-arrow-right" style={{color: '#a19c9c'}}></i></div>
+                            <div className={getClassName('mr-10')}>
+                                <div>{getTime(leg.arrival_time)}</div>
+                                <div className={getClassName('airport')}>{leg.arrival_airport}</div>
+                            </div>
                         </div>
-                        <div className={getClassName('mr-10')}><i className="fas fa-arrow-right" style={{color: '#a19c9c'}}></i></div>
-                        <div className={getClassName('mr-10')}>
-                            <div>{getTime(leg.arrival_time)}</div>
-                            <div className={getClassName('airport')}>{leg.arrival_airport}</div>
-                        </div>
-                        <div className={getClassName('duration-info')}>
-                            <div className={getClassName('gray')}>{getDuration(leg.duration_mins)}</div>
-                            <div className={getClassName(getClass(leg.stops))}>{(leg.stops > 0) ? leg.stops + ' Stop' : 'Direct'}</div>
+                        <div className={getClassName('flex-center')}>
+                            <div className={getClassName('duration-info')}>
+                                <div className={getClassName('gray')}>{getDuration(leg.duration_mins)}</div>
+                                <div className={getClassName(getClass(leg.stops))}>{(leg.stops > 0) ? leg.stops + ' Stop' : 'Direct'}</div>
+                            </div>
                         </div>
                     </div>
                 )
